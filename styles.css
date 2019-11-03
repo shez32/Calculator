@@ -1,0 +1,64 @@
+* {
+    font-size: 22px;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: rgb(56, 56, 56);
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 40px;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    color: white;
+    font-family: 'IBM Plex Mono', monospace;
+    text-shadow: 2px 2px orange;
+}
+
+.calculator {
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 12.5% 12.5%;
+    max-width: 500px;
+    height: 80vh;
+    width: 90vw;
+    margin: 0 auto;
+}
+
+#display {
+    grid-column: 1/span 4;
+    background: lightgray;
+    text-align: right;
+    position: relative;
+    color: #333232
+}
+
+#displayText {
+    font-size: 80px;
+    word-wrap: break-word;
+    margin-right: 30px;
+    top: 10px;
+}
+
+.grid {
+    position: relative;
+    border: none;
+    text-align: center;
+    background: #1f1f20;
+    color: white;
+    border: 1px solid rgb(34, 34, 34);
+}
+
+#clear, #equal {
+    grid-column: 4/span 2;
+    color: orange;
+}
+
+.op {
+    color: rgb(155, 147, 137) !important;
+}
+
